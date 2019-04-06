@@ -1,0 +1,30 @@
+﻿<Window x:Class="BookShop.OrderSummary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookShop"
+        mc:Ignorable="d"
+        Title="Order Summary" Height="500" Width="910">
+    <Grid>
+        <ListView Name="listBook" HorizontalAlignment="Left" Height="255" Margin="20,64,0,0" VerticalAlignment="Top" Width="820">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="CustomerID" Width="120" DisplayMemberBinding="{Binding CustomerIdOrder}"/>
+                    <GridViewColumn Header="ISBN" Width="170" DisplayMemberBinding="{Binding OrderISBN}"/>
+                    <GridViewColumn Header="Title" Width="280" DisplayMemberBinding="{Binding OrderTitle}"/>
+                    <GridViewColumn Header="Quantity" Width="120" DisplayMemberBinding="{Binding Quantity}"/>
+                    <GridViewColumn Header="Price" Width="130" DisplayMemberBinding="{Binding OrderPrice}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox Name="totalPrice" FontSize="16" IsEnabled="False" HorizontalAlignment="Left" Height="30" Margin="709,330,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label Content="Total price" FontSize="16" HorizontalAlignment="Left" Height="30" Margin="615,330,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label Content="Summary of your order" FontSize="16" Margin="20,15,0,374"/>
+        <Button Name="exit" Content="Exit" Click="Exit_Click" HorizontalAlignment="Left" Height="30" Margin="740,387,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Name="back" Content="Back" Click="Back_Click" HorizontalAlignment="Left" Height="30" Margin="604,387,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="totalSell" FontSize="16" IsEnabled="False" HorizontalAlignment="Left" Height="30" Margin="319,387,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label Content="Total sell" FontSize="16" HorizontalAlignment="Left" Height="30" Margin="225,387,0,0" VerticalAlignment="Top" Width="89"/>
+
+    </Grid>
+</Window>
