@@ -25,12 +25,6 @@ namespace BookShop {
 
         public MainWindow() {
             InitializeComponent();
-            string connectionString = ConfigurationManager.ConnectionStrings["BookShop.Properties.Settings.PeemBookShopDBConnectionString"].ConnectionString;
-            sqlConnection = new SqlConnection(connectionString);
-            //OrderBooks orderBooks = new OrderBooks();
-            //orderBooks.ShowDialog();
-            //OrderSummary orderSummary = new OrderSummary();
-            //orderSummary.ShowDialog();
         }
 
         private void Login_Click(object sender, RoutedEventArgs e) {

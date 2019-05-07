@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\peema\source\repos\BookShop\BookShop\obj\Debug\
+C:\Users\peema\Documents\GitHub\BookShop\BookShop\obj\Debug\
 BookShop
 none
 false
 DEBUG;TRACE
-C:\Users\peema\source\repos\BookShop\BookShop\App.xaml
+C:\Users\peema\Documents\GitHub\BookShop\BookShop\App.xaml
 6757172278
 
-12-1664001121
+161173543185
 14-799888181
 MainMenu.xaml;MainWindow.xaml;ManageBooks.xaml;ManageCustomers.xaml;OrderBooks.xaml;OrderSummary1.xaml;
 
-False
+True
 
